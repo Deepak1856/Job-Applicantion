@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://redpenwench.com/wp-content/uploads/2022/10/Zoom-Interview-Background-1024x520.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application for Software</h1>
+        <form id="jobApplicationForm">
+            <label>Name of employee:</label>
+            <input type="text" id="name" name="name" placeholder="username" required>
+            
+            <label>Roll Number:</label>
+            <input type="text" id="rl" name="rl" required>
+
+            <label>CGPA:</label>
+            <input type="number" step="0.01" id="cgpa" name="cgpa" required>
+            
+            <label>Role:</label>
+            <input type="text" id="role" name="role" required>
+
+            <label>Graduation Year:</label>
+            <input type="number" id="gy" name="gy" required>
+            
+            <button type="submit">Apply</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    <script src="deepak.js"></script>
+</body>
+</html>
